@@ -3,8 +3,9 @@
         color: white
         margin: 0
         padding: 0
+        font-size: 100px
+        line-height: 110px
 
-    font-size: 50px
     text-transform: uppercase
 
     > .first
@@ -15,3 +16,17 @@
 
     > .third
         font-weight: 400
+
+    > .cta
+        text-decoration: none
+        color: $theme-dark
+        font-size: 40px
+        font-weight: 600
+        margin-left: 283px
+        display: block
+
+        &:hover
+            color: transparentize($theme-dark, .2)
+
+        > .fa
+            margin-left: 15px
