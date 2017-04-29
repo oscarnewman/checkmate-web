@@ -1,0 +1,46 @@
+.project-description
+
+    padding: 40px
+
+    > .headers, > .description
+        +column(.5)
+
+        @media (max-width: 900px)
+            +column(1)
+            text-align: center
+
+    > .headers
+        > h2
+            font-size: 80px
+            font-weight: 800
+            color: $theme-light
+
+            margin: 0
+            padding: 0
+            line-height: 80px
+
+            > small
+                font-size: 60px
+                color: $theme-dark
+
+            @media (max-width: 900px)
+                font-size: 60px
+                line-height: 60px
+                > small
+                    font-size: 40px
+                    line-height: 40px
+
+    > .description
+        color: $theme-dark
+        font-size: 20px
+
+        @media (max-width: 900px)
+            padding-top: 1em
+            > p
+                +center(430px)
+
+                > strong
+                    display: block
+
+        > p
+            padding: 5px 0
