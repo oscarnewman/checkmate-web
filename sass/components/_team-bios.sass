@@ -1,0 +1,31 @@
+.team-bios
+    background: $theme-dark
+    padding: 2em 0
+
+    > ._container
+        > h3
+            color: white
+            text-align: center
+            padding: 0
+            margin: 0
+
+        > .subtitle
+            opacity: .35
+            text-transform: uppercase
+            font-size: 20px
+
+        > .title
+            font-size: 60px
+            line-height: 60px
+            margin-bottom: 1em
+
+        > .bios
+            margin-bottom: 2em
+            +clearfix()
+
+        .bio-block
+            +column(1/3, $gutter: 10)
+
+            @media (max-width: 600px)
+                +column(1)
+                margin-bottom: 60px
